@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'fuenteGot';
+  src: url('../../font/got.ttf');
+}
+
+div#container{
+	width: 80%;
+	background-color: transparent;
+	margin-left: 1%;
+	font-family: 'fuenteGot';
+}
+
+img{
+	width:260px;
+	height: 385px;
+	border: solid 2px #934242;
+}
+
+.panel, .panel-default, .panel-body, .panel-footer{
+	max-width: 275px;
+	padding: 3px;
+	background-color: transparent;
+	border: none;
+}
+
+.panel{
+	background-color:rgba(119, 39, 39, 0.5);
+}
+
+.panel-footer{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	text-align: center;
+	font-size: 20px;
+	color: black;
+}
+
+ul{	
+	font-size: 14px;
+	list-style-type: none;
+}
+
+li{
+	padding: 1%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	background-color: rgba(119, 39, 39, 0.3);
+	border-radius: 5px;
+	border: solid 3px #934242;
+}
+
+li > span{
+	margin-left: 10%;
+	float:right;
+}

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'fuenteGot';
+  src: url('../../font/got.ttf');
+}
+
+footer{
+	text-align: right;
+	font-family: 'fuenteGot';
+	font-size: 11px;
+	margin-right: 5px;
+}

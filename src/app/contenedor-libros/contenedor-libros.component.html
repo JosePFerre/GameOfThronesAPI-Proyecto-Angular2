@@ -1,0 +1,9 @@
+<app-datos-libro *ngIf="muestraDatos"></app-datos-libro>
+<div class="container-fluid" *ngIf="!muestraDatos">
+<div *ngIf="libros.length!=5">cargando ...</div>
+<div id='contenedorLibros' *ngIf="libros.length==5"> 
+	<div class='libro col-sm-1 panel panel-default' *ngFor="let libro of libros | ordenaLibros; let i = index" (click)="detalleLibro(i)"><img class="img-responsive" [src]="portadas[i]">
+	<div class="panel-footer">{{libro.name}}</div>
+	</div>
+</div>
+</div>

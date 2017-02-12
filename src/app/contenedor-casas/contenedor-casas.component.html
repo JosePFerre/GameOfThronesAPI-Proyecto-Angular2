@@ -1,0 +1,36 @@
+<div class='row'>
+<div class="col-sm-1">
+<ul class="pager">
+	<li class="previous"><button type="button" class="btn btn-default btn-lg" (click)="pag_anterior($event)" [disabled]="pagina == 1"><span class="glyphicon glyphicon-chevron-left"></span></button></li>
+</ul>
+</div>
+<div class="container col-sm-10">
+<div *ngIf="casas.length==0">cargando ...</div>
+<div id='contenedorCasas' *ngIf="casas.length!=0"> 
+	<div class='col-sm-6' *ngFor="let casa of casas">
+	<ul class="list-group" id='datosCasa'>
+  		<li class="list-group-item nombre">{{casa.name}}</li>
+		<li class="list-group-item" *ngIf="casa.coatOfArms.length!=0"><span>Colores:</span><p>{{casa.coatOfArms}}</p></li>
+		<li class="list-group-item" *ngIf="casa.coatOfArms.length==0"><span>Colores:</span><p>Desconocido</p></li>
+		<li class="list-group-item" *ngIf="casa.words.length!=0"><span>Lema:</span><p>{{casa.words}}</p></li>
+		<li class="list-group-item" *ngIf="casa.words.length==0"><span>Lema:</span><p>Desconocido</p></li>
+		<li class="list-group-item" *ngIf="casa.region.length!=0"><span>Region:</span><p>{{casa.region}}</p></li>
+		<li class="list-group-item" *ngIf="casa.region.length==0"><span>Region:</span><p>Desconocido</p></li>
+		<li class="list-group-item" *ngIf="casa.founded.length!=0"><span>Fundacion:</span><p>{{casa.founded}}</p></li>
+		<li class="list-group-item" *ngIf="casa.founded.length==0"><span>Fundacion:</span><p>Desconocido</p></li>
+ 		<li class="list-group-item" *ngIf="casa.titles.length!=0"><span>Titulos:</span>
+			<ul><li *ngFor='let titulo of casa.titles'>{{titulo}}</li></ul></li>
+	<li class="list-group-item" *ngIf="casa.titles.length==0"><span>Titulos:</span><p>Desconocido</p></li>
+ 		<li class="list-group-item" *ngIf="casa.seats.length!=0"><span>Dominios:</span><ul><li *ngFor='let dominio of casa.seats'>{{dominio}}</li></ul></li>
+	<li class="list-group-item" *ngIf="casa.seats.length==0"><span>Dominios:</span><p>Desconocido</p></li>
+ 		<li class="list-group-item" *ngIf="casa.ancestralWeapons.length!=0"><span>Armas ancestrales:</span><ul><li *ngFor='let arma of casa.ancestralWeapons'>{{arma}}</li></ul></li>
+<li class="list-group-item" *ngIf="casa.ancestralWeapons.length==0"><span>Armas ancestrales:</span><p>Desconocido</p></li>
+	</ul>
+	</div>
+</div>
+</div>
+<div class='col-sm-1'>
+	<ul class="pager">
+	<li class="next"><button type="button" class="btn btn-default btn-lg" (click)="pag_siguiente($event)"><span class="glyphicon glyphicon-chevron-right"></span></button></li></ul>
+</div>
+</div>

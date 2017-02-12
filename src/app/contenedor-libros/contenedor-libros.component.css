@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'fuenteGot';
+  src: url('../../font/got.ttf');
+}
+
+.libro{
+	border: solid 1px;
+	width: 18%;
+	margin-left: 1.5%;
+}
+
+.container{
+	width: 100%;
+}
+
+.contenedorLibros{
+	
+}
+
+.panel, .panel-default, .panel-body, .panel-footer{
+	padding: 3px;
+	background-color: transparent;
+	border: none;
+}
+
+.panel{
+	background-color:rgba(119, 39, 39, 0.5);
+	transition:  border-width 0.1s;
+}
+
+.panel:hover{
+	border: 1px solid;
+	border-width:medium;
+	cursor:pointer;
+}
+
+.panel-footer{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	text-align: center;
+	font-family: 'fuenteGot';
+	font-size: 20px;
+	color: black;
+	height: 75px;
+}

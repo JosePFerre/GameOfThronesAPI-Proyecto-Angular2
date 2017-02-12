@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'fuenteGot';
+  src: url('../../font/got.ttf');
+}
+
+.navbar, .navbar-default{
+	height: 20%;
+	font-family: 'fuenteGot';
+}
+
+.container-fluid{
+	height: 100%;
+}
+
+
+ul{
+	height: 100%;
+	width: 100%;
+}
+
+li, a{
+	display: block;
+    height: 90%;
+	width: 24%;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.menuCabecera{
+	background-image: url(../../img/fondo1.JPG);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	text-align: right;
+	font-size: 20px;
+	border-right: solid 2px #dbdde0;
+	border-left: solid 1px;
+	transition: background-color  0.5s, font-size  0.3s, border-right 0.3s;
+}
+
+.menuCabecera:hover {
+	font-size: 23px;
+	border-right: solid 2px grey;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	font-size: 23px;
+	border-right: solid 2px grey;
+}
+
+#home{
+	background-image: url(../../img/fondo-home.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}

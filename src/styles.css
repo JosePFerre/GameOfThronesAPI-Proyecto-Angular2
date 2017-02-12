@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+html, body{
+	margin: 0;
+	width: 100%;
+	height:100%;
+}
+
+#cuerpo{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+/*Para lograr el efecto de transparencia*/
+
+#cuerpo:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./img/fondo.jpg);
+	background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.5;
+    z-index: -1;
+}
